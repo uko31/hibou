@@ -7,6 +7,7 @@ import pickle
 import os.path
 import sys
 
+from utility.settings import Settings
 from utility.const import INPUT_DIR
 from utility.const import MEDIA_DIR_LIST
 from utility.tools import init_dictionaries
@@ -21,6 +22,9 @@ if __name__ == "__main__":
     en accord avec ce qui a été trouvé dans les dictionnaires.
     """    
     
+    settings = Settings()
+    print(settings.STUDIO_LIST)
+
     # a faire plus tard: gérer les options de lancement pour modifier
     # le comportement par défaut.
     

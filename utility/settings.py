@@ -6,6 +6,7 @@
 from os      import getenv
 from os.path import join
 from os.path import curdir
+from os.path import isfile 
 from json    import load
 from json    import dump
 
@@ -39,13 +40,15 @@ class Settings:
             self.load_settings_from_file( settings_file )
         else:
             for attr in Settings.__dict__:
-                setattr( self.attr, attr ) 
+                if attr.startswith('__') or attr[0].islower():
+                    continue
+                setattr( self, attr, getattr(self, attr) ) 
                 self.save_settings_to_file( settings_file )
 
     def save_settings_to_file(self, settings_file):
         try:
             with open( settings_file, "w" ) as f:
-                dump( self.__dict__, f )
+                dump( self.__dict__, f, indent=True )
         except:
             return False
 
@@ -54,4 +57,6 @@ class Settings:
             with open( settings_file, "r" ) as f:
                 settings = load(f)
             for attr, value in settings.items():
-                setattr( self.attr, value )
+                setattr( self, attr, value )
+        except:
+            pass
