@@ -1,0 +1,48 @@
+{
+ "SHORT_NAMES": [
+  {
+   "short": "bex",
+   "long": "Brazzers Extra"
+  },
+  {
+   "short": "tlib",
+   "long": "Teens Like It Big"
+  },
+  {
+   "short": "plib",
+   "long": "Pornstars Like It Big"
+  },
+  {
+   "short": "mic",
+   "long": "Moms In Control"
+  }
+ ],
+ "BASE_SCORE": 0.7,
+ "TRASH_LIST": [
+  "XXX",
+  "mp4",
+  "480p",
+  "720p",
+  "1080p"
+ ],
+ "MEDIA_DIR_LIST": [
+  "/home/mika/.data/.other/s",
+  "/home/mika/.data/.other/l",
+  "/home/mika/.data/.other/m",
+  "/home/mika/.data/.other/c"
+ ],
+ "INPUT_DIR": "/home/mika/.data/.other/_input",
+ "STUDIO_LIST": [
+  "Brazzers",
+  "Reality Kings",
+  "Naughty America"
+ ],
+ "MEDIA_EXT": [
+  "mp4",
+  "wmv",
+  "mpeg",
+  "mpg",
+  "avi",
+  "flv"
+ ]
+}
